@@ -1,5 +1,5 @@
 ## About the Game:
-Ok, so your job, is to click on the little appearing icons and try to get the highest score in the given time. The is a mini-game made using Pygame and Python for Ludum Dare 47
+Ok, so your job, is to click on the little appearing icons and try to get the highest score in the given time. The is a mini-game made using Pygame and Python. It was made for Ludum Dare 47
 
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
