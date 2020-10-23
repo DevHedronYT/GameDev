@@ -13,6 +13,4 @@ https://managore.itch.io/m5x7​
 For the final level's procedural generation, I used the tutorials: 
 https://www.youtube.com/watch?v=FZJ02G69HkY&t=1357s
 
-Official link to the Game:
-https://devhedron-yt.itch.io/slippery-the-game ||
 
