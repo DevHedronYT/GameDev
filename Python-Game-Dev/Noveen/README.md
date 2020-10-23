@@ -1,3 +1,6 @@
+## About the Game:
+Ok, so you are on another planet, your job, bust all the ghosts, but with changing ancient weapons of course. The game is a platformer made using Pygame and Python
+
 ## Getting Requirements:
 
 ```
