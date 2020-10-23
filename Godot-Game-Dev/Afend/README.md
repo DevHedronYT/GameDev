@@ -22,13 +22,5 @@ The Assets I used mainly were:
   https://tallbeard.itch.io/music-loop-bundle ||
   
 Official link to the Game:
-https://ssjcoderonyt.itch.io/affend ||
+https://devhedron-yt.itch.io/affend ||
 
-Follow me on YouTube:
-https://www.youtube.com/channel/UCsuz099lBAREjwEyjVTgg_A ||
-
-Follow me on itch.io:
-https://ssjcoderonyt.itch.io/ ||
-
-Also my new GitHub account:
-https://github.com/ssjCoderYT ||
