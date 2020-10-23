@@ -21,6 +21,3 @@ The Assets I used mainly were:
   https://managore.itch.io/m5x7 ||
   https://tallbeard.itch.io/music-loop-bundle ||
   
-Official link to the Game:
-https://devhedron-yt.itch.io/affend ||
-
