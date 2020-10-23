@@ -1,5 +1,5 @@
 ## About the Game:
-Ok, so you are on stuck on an island, your job, escape the island, but with commands in a Command Line Interface. The game is a top-down made using Pygame and Python
+Ok, so you are on stuck on an island, your job, escape the island, but with commands in a Command Line Interface. The game is a top-down made using Pygame and Python. It was made for PyWeek 30.
 
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
