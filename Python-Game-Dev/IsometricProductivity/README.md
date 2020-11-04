@@ -17,7 +17,7 @@ Also I am using Python 3.9 so be sure to have it installed
 ## Running Game:
 
 ```
-python3 main.py or python main.py
+python3 game.py or python game.py
 ```
 
 ## Playing the Game:
