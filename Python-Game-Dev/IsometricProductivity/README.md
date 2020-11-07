@@ -1,4 +1,4 @@
-This was an application made for the TWT Code Jam #2, it tries to gamify the experience of working or being productive. 
+This was an application made for a Code Jam, it tries to gamify the experience of working or being productive. 
 
 ## About the Game:
 Ok, so you plant plants and then a timer starts and you havr to do something productive over that time. This is a gamified app made using Pygame and Python.
