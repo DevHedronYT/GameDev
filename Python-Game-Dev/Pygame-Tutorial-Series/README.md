@@ -1,5 +1,7 @@
 This github contains all the code for my **Pygame 2** tutorial series which can be found here: https://www.youtube.com/playlist?list=PLCqWq4vJTZacpphiH2bTCjc5Za-aq70mr
 
+Also be sure to have Python 3.7 or above installed on your machine
+
 Be sure to run pip or pip3 depending on your machine: 
 ```
 pip3 install -r requirements.txt
