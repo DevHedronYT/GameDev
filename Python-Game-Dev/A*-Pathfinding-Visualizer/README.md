@@ -1,7 +1,7 @@
 ## About the App:
 Ok, this was an app made as a weekend project by following Tech With Tim's Tutorial: https://www.youtube.com/watch?v=JtiK0DOeI4A&t=1179s
 
-## Downloading the Game:
+## Downloading the App:
 Download the .py file, and then get the requirements and run the game
 
 ## Getting Requirements:
