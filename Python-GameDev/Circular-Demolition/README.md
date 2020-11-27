@@ -22,7 +22,7 @@ python3 main.py or python main.py
 
 You move around using WASD or the arrow keys and you shoot using your mouse. Hold you mouse button down and rotate your mouse to get a circular effect while shooting hence the name Circular Demolition
 
-Official itch.io Link:
+Official itch.io Link: https://devhedronyt.itch.io/circular-demolition
 
 Devlog:
 
