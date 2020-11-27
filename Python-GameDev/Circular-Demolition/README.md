@@ -24,7 +24,7 @@ You move around using WASD or the arrow keys and you shoot using your mouse. Hol
 
 Official itch.io Link: https://devhedronyt.itch.io/circular-demolition
 
-Devlog:
+Devlog: https://youtu.be/eA8aBPzyy4Q
 
 
 ## 3rd Party Assets Used in the Game:
