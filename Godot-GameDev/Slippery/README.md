@@ -1,6 +1,6 @@
 # SlipperyTheGame
 This Game was made by me for the official So Bad It is Good Game Jam 2020
-The archive contains all of the assets I used as well as the worlds BUT it does not contain the Builds as they were too big for the repository
+This repository contains evrything I used
 
 I used the following open source assets:
 
