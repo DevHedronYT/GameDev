@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://World.gd" type="Script" id=1]
+[ext_resource path="res://m5x7.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Ludum Dare 38 - Track 3.wav" type="AudioStream" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://worldGen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Jump.wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 200
+font_data = ExtResource( 2 )
+
+[node name="World" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="WorldGens" type="Node" parent="."]
+
+[node name="worldGen" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( 219.965, -195.036 )
+scale = Vector2( 2, 2 )
+grid_size = 22
+max_blocks = 100000000
+
+[node name="worldGen2" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( -1244.83, -624.232 )
+scale = Vector2( 4, 4 )
+grid_size = 22
+max_blocks = 60
+
+[node name="worldGen5" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( -1244.83, -361.183 )
+scale = Vector2( 4, 4 )
+grid_size = 22
+max_blocks = 60
+
+[node name="worldGen6" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( -1244.83, -150.326 )
+scale = Vector2( 4, 4 )
+grid_size = 22
+max_blocks = 60
+
+[node name="worldGen3" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( -1244.83, -891.772 )
+scale = Vector2( 4, 4 )
+grid_size = 22
+max_blocks = 60
+
+[node name="worldGen4" parent="WorldGens" instance=ExtResource( 5 )]
+position = Vector2( -1244.83, -1078.95 )
+scale = Vector2( 4, 4 )
+grid_size = 22
+max_blocks = 60
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 390.086, -443.932 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 7 )
+volume_db = 1.0
+
+[node name="Jump2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 7 )
+volume_db = 1.0
+pitch_scale = 0.81
+
+[node name="Label" type="Label" parent="."]
+margin_left = 423.127
+margin_top = -759.797
+margin_right = 3055.13
+margin_bottom = -592.797
+custom_fonts/font = SubResource( 1 )
+text = "There is no end...... You may as well Quit
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.699
+pitch_scale = 2.2
+autoplay = true

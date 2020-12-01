@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/WorldGen.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/StatTiles.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Reach.tscn" type="PackedScene" id=3]
+
+[node name="WorldGen" type="Position2D"]
+script = ExtResource( 1 )
+block = ExtResource( 2 )
+end = ExtResource( 3 )
+grid_size = 120
+max_blocks = 20

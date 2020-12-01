@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://download (6).png" type="Texture" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+light_mode = 1
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.3227, 16.0831 )
+
+[node name="TileSet" type="Node"]
+
+[node name="Sprite" type="Sprite" parent="."]
+self_modulate = Color( 1, 0.996078, 0.996078, 1 )
+material = SubResource( 1 )
+scale = Vector2( 0.0112072, 0.0107139 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 3, 190, 187 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+visible = false
+position = Vector2( 94.0606, 94.4588 )
+scale = Vector2( 5.87879, 5.90368 )
+shape = SubResource( 2 )

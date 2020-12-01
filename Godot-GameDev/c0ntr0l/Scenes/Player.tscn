@@ -1,0 +1,66 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/PickUp.wav" type="AudioStream" id=1]
+[ext_resource path="res://Sprites/mvig.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/idleplay.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/moveidnl.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/idleplayer3.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=6]
+[ext_resource path="res://Sprites/idleplayer4.png" type="Texture" id=7]
+[ext_resource path="res://Music/Jump.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sprites/lol.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "idle",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "moving",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 27.677
+height = 104.295
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 6 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2.65507, 3.48735 )
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.74762, 8.15558 )
+rotation = -0.00469852
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -16.391
+pitch_scale = 1.31
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -16.0
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

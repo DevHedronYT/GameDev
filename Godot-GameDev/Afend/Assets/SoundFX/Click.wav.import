@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Click.wav-b9ef52c9e44e8d08b9eb079c99235929.sample"
+
+[deps]
+
+source_file="res://Assets/SoundFX/Click.wav"
+dest_files=[ "res://.import/Click.wav-b9ef52c9e44e8d08b9eb079c99235929.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/m5x7.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/SoundFX/Ludum Dare 38 - Track 9.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/SoundFX/Click.wav" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 2 )
+
+[sub_resource type="Environment" id=3]
+background_mode = 4
+glow_enabled = true
+glow_bloom = 0.23
+glow_blend_mode = 0
+glow_bicubic_upscale = true
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameName" type="Label" parent="."]
+margin_left = 400.0
+margin_top = 195.0
+margin_right = 522.0
+margin_bottom = 281.0
+custom_fonts/font = SubResource( 1 )
+text = "Afend"
+
+[node name="Start" type="Button" parent="GameName"]
+margin_left = -34.5583
+margin_top = 96.0362
+margin_right = 237.442
+margin_bottom = 166.036
+custom_fonts/font = SubResource( 2 )
+text = "Play Game"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="GameName"]
+margin_left = -34.5583
+margin_top = 184.363
+margin_right = 237.442
+margin_bottom = 254.363
+custom_fonts/font = SubResource( 2 )
+text = "Quit Game"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.0
+pitch_scale = 1.2
+autoplay = true
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+pitch_scale = 0.88
+[connection signal="pressed" from="GameName/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="GameName/Quit" to="." method="_on_Quit_pressed"]

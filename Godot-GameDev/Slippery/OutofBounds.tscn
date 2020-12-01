@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 72.4043, 1.07441e+08 )
+
+[node name="out" type="KinematicBody2D"]
+position = Vector2( 1123.91, 643.314 )
+scale = Vector2( 30.8858, -4.76837e-07 )
+
+[node name="out2" type="Sprite" parent="."]
+position = Vector2( -4.03822, -1.25865e+06 )
+scale = Vector2( 1.0631, 0.600128 )
+texture = ExtResource( 1 )
+
+[node name="out" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -8.64115e+07 )
+shape = SubResource( 1 )

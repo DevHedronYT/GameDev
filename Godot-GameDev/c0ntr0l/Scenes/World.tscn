@@ -1,0 +1,138 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/World_Gen.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/World.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/OutofBounds.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/LevelEnd.tscn" type="PackedScene" id=6]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 352.798, -36.1844 )
+
+[node name="End" type="Node" parent="."]
+
+[node name="OutofBounds" parent="End" instance=ExtResource( 5 )]
+position = Vector2( 57927.1, 1771.23 )
+
+[node name="LevelEnd" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.9, -122.507 )
+
+[node name="LevelEnd2" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.9, -2.68237 )
+
+[node name="LevelEnd3" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.9, 119.928 )
+
+[node name="LevelEnd4" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.9, 245.326 )
+
+[node name="LevelEnd5" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.9, 373.51 )
+
+[node name="LevelEnd6" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 501.695 )
+
+[node name="LevelEnd7" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 627.092 )
+
+[node name="LevelEnd8" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 746.917 )
+
+[node name="LevelEnd9" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 869.528 )
+
+[node name="LevelEnd10" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 994.925 )
+
+[node name="LevelEnd11" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18504.1, 1123.11 )
+
+[node name="LevelEnd12" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18501.3, 1251.29 )
+
+[node name="LevelEnd13" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.4, -1599.5 )
+
+[node name="LevelEnd14" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.4, -1479.68 )
+
+[node name="LevelEnd15" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.4, -1357.06 )
+
+[node name="LevelEnd16" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.4, -1231.67 )
+
+[node name="LevelEnd17" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.4, -1103.48 )
+
+[node name="LevelEnd18" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -975.298 )
+
+[node name="LevelEnd19" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -849.901 )
+
+[node name="LevelEnd20" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -730.076 )
+
+[node name="LevelEnd21" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -607.465 )
+
+[node name="LevelEnd22" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -482.068 )
+
+[node name="LevelEnd23" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18509.6, -353.884 )
+
+[node name="LevelEnd24" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18506.8, -225.699 )
+
+[node name="LevelEnd25" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18517.9, -3094.82 )
+
+[node name="LevelEnd26" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18517.9, -2974.99 )
+
+[node name="LevelEnd27" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18517.9, -2852.38 )
+
+[node name="LevelEnd28" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18517.9, -2726.99 )
+
+[node name="LevelEnd29" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18517.9, -2598.8 )
+
+[node name="LevelEnd30" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -2470.62 )
+
+[node name="LevelEnd31" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -2345.22 )
+
+[node name="LevelEnd32" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -2225.39 )
+
+[node name="LevelEnd33" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -2102.78 )
+
+[node name="LevelEnd34" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -1977.39 )
+
+[node name="LevelEnd35" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18515.1, -1849.2 )
+
+[node name="LevelEnd36" parent="End" instance=ExtResource( 6 )]
+position = Vector2( 18512.3, -1721.02 )
+
+[node name="Platforms" type="Node" parent="."]
+
+[node name="World_Gen" parent="Platforms" instance=ExtResource( 1 )]
+position = Vector2( 161.192, 274.734 )
+grid_size = 90
+max_blocks = 200
+
+[node name="Spawner" type="Timer" parent="."]
+wait_time = 1.25
+autostart = true
+[connection signal="timeout" from="Spawner" to="." method="_on_Spawner_timeout"]

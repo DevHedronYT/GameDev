@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Hit.wav" type="AudioStream" id=1]
+[ext_resource path="res://Enemy.gd" type="Script" id=2]
+[ext_resource path="res://low4 (2) copy.png" type="Texture" id=3]
+[ext_resource path="res://low4 (2).png" type="Texture" id=4]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.0333333, 0.822222 )
+colors = PoolColorArray( 1, 0, 0, 1, 0.811765, 0.360784, 0.117647, 1, 0.890196, 0.498039, 0.0823529, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.193694 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 2
+emission_box_extents = Vector3( 6, 13, 0 )
+flag_disable_z = true
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 25.0
+angular_velocity = 350.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 25.0
+angle = 45.0
+scale = 5.0
+scale_curve = SubResource( 4 )
+color_ramp = SubResource( 2 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 7.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 16.1172
+height = 14.9919
+
+[node name="Enemy" type="Area2D"]
+position = Vector2( -0.686981, -1.42271 )
+script = ExtResource( 2 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 10.1619, 7.42231 )
+rotation = -1.5708
+amount = 15
+process_material = SubResource( 5 )
+
+[node name="Enemy2" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 0.705882, 0.705882, 1 )
+show_behind_parent = true
+position = Vector2( 60.8888, 22.5323 )
+scale = Vector2( 0.141106, 0.134222 )
+frames = SubResource( 6 )
+speed_scale = 0.5
+playing = true
+offset = Vector2( -352.095, -61.7936 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Enemy" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 11.1619, 12.1069 )
+shape = SubResource( 7 )
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = 1.0
+pitch_scale = 0.24

@@ -1,0 +1,142 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://tile2.tres" type="TileSet" id=1]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LevelTele.tscn" type="PackedScene" id=3]
+[ext_resource path="res://OutofBounds.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Coins.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Ludum Dare 38 - Track 3.wav" type="AudioStream" id=7]
+[ext_resource path="res://Jump.wav" type="AudioStream" id=8]
+
+[node name="World" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.1, 0.1 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 10
+format = 1
+tile_data = PoolIntArray( -677773304, -1073741824, 0, 460130, -1073741824, 0, 460136, -1073741824, 0, 460142, -1073741824, 0, 460148, -1073741824, 0, 460154, -1073741824, 0, 460160, -1073741824, 0, 460166, -1073741824, 0, 721829, -1073741824, 0, 721835, -1073741824, 0, 721841, -1073741824, 0, 721847, -1073741824, 0, 721853, -1073741824, 0, 721859, -1073741824, 0, 721865, -1073741824, 0, 722229, -1073741824, 0, 722235, -1073741824, 0, 722241, -1073741824, 0, 722247, -1073741824, 0, 722253, -1073741824, 0, 722259, -1073741824, 0, 788444, -1073741824, 0, 788450, -1073741824, 0, 788456, -1073741824, 0, 788462, -1073741824, 0, 1115158, -1073741824, 0, 1115164, -1073741824, 0, 1115170, -1073741824, 0, 1115176, -1073741824, 0, 1115182, -1073741824, 0, 1115188, -1073741824, 0, 1115194, -1073741824, 0, 1115855, -1073741824, 0, 1115861, -1073741824, 0, 1115867, -1073741824, 0, 1115873, -1073741824, 0, 1115879, -1073741824, 0, 1246472, -1073741824, 0, 1246478, -1073741824, 0, 1246484, -1073741824, 0, 1246490, -1073741824, 0, 1246496, -1073741824, 0, 1508219, -1073741824, 0, 1508225, -1073741824, 0, 1508231, -1073741824, 0, 1508237, -1073741824, 0, 1508243, -1073741824, 0, 1508249, -1073741824, 0, 1508255, -1073741824, 0, 1508261, -1073741824, 0, 1508297, -1073741824, 0, 1508303, -1073741824, 0, 1508309, -1073741824, 0, 1508315, -1073741824, 0, 1508321, -1073741824, 0, 1508327, -1073741824, 0, 1508333, -1073741824, 0, 1508339, -1073741824, 0, 1508345, -1073741824, 0, 1508351, -1073741824, 0, 1508449, -1073741824, 0, 1508455, -1073741824, 0, 1508461, -1073741824, 0, 1508467, -1073741824, 0, 1508473, -1073741824, 0, 1508755, -1073741824, 0, 1508761, -1073741824, 0, 1508767, -1073741824, 0, 1508773, -1073741824, 0, 1508779, -1073741824, 0, 1508785, -1073741824, 0, 1509284, -1073741824, 0, 1509290, -1073741824, 0, 1509296, -1073741824, 0, 1509302, -1073741824, 0, 1509308, -1073741824, 0, 1509314, -1073741824, 0, 1509320, -1073741824, 0, 1574562, -1073741824, 0, 1574568, -1073741824, 0, 1574574, -1073741824, 0, 1574580, -1073741824, 0, 1574586, -1073741824, 0, 1705548, -1073741824, 0, 1705554, -1073741824, 0, 1705560, -1073741824, 0, 1705566, -1073741824, 0, 1705572, -1073741824, 0, 1902327, -1073741824, 0, 1902333, -1073741824, 0, 1902339, -1073741824, 0, 1902345, -1073741824, 0, 1902351, -1073741824, 0, 1902357, -1073741824, 0, 1902363, -1073741824, 0, 1902369, -1073741824, 0, 1902375, -1073741824, 0, 1967301, -1073741824, 0, 1967307, -1073741824, 0, 1967313, -1073741824, 0, 1967319, -1073741824, 0, 1967325, -1073741824, 0, 1967331, -1073741824, 0, 1967337, -1073741824, 0, 1967343, -1073741824, 0, 1967349, -1073741824, 0, 1967355, -1073741824, 0, 2099063, -1073741824, 0, 2099069, -1073741824, 0, 2099075, -1073741824, 0, 2099081, -1073741824, 0, 2099087, -1073741824, 0, 2099093, -1073741824, 0, 2229073, -1073741824, 0, 2229079, -1073741824, 0, 2229085, -1073741824, 0, 2229091, -1073741824, 0, 2229097, -1073741824, 0, 2229103, -1073741824, 0, 2229109, -1073741824, 0, 2229115, -1073741824, 0, 2229313, -1073741824, 0, 2229319, -1073741824, 0, 2229325, -1073741824, 0, 2229331, -1073741824, 0, 2229337, -1073741824, 0, 2294921, -1073741824, 0, 2294927, -1073741824, 0, 2294933, -1073741824, 0, 2294939, -1073741824, 0, 2294945, -1073741824, 0, 2294951, -1073741824, 0, 2294957, -1073741824, 0, 2294963, -1073741824, 0, 2426298, -1073741824, 0, 2426304, -1073741824, 0, 2426310, -1073741824, 0, 2426316, -1073741824, 0, 2426322, -1073741824, 0, 2426328, -1073741824, 0, 2426334, -1073741824, 0, 2426340, -1073741824, 0, 2557476, -1073741824, 0, 2557482, -1073741824, 0, 2557488, -1073741824, 0, 2557494, -1073741824, 0, 2557500, -1073741824, 0, 2557556, -1073741824, 0, 2557562, -1073741824, 0, 2557568, -1073741824, 0, 2557574, -1073741824, 0, 2557580, -1073741824, 0, 2557586, -1073741824, 0, 2754364, -1073741824, 0, 2754370, -1073741824, 0, 2754376, -1073741824, 0, 2754382, -1073741824, 0, 2754388, -1073741824, 0, 2754394, -1073741824, 0, 2754400, -1073741824, 0, 2754406, -1073741824, 0, 2754412, -1073741824, 0, 3409398, -1073741824, 0, 3409404, -1073741824, 0, 3409410, -1073741824, 0, 3409416, -1073741824, 0, 3409422, -1073741824, 0 )
+
+[node name="Levelfin" parent="." instance=ExtResource( 3 )]
+position = Vector2( 6705.5, 13.8299 )
+next_world = "res://world5.tscn"
+
+[node name="OutofBounds" type="Node" parent="."]
+
+[node name="out" parent="OutofBounds" instance=ExtResource( 4 )]
+position = Vector2( 4267.64, 845.242 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2788.73, 26.9078 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 8 )
+volume_db = 1.0
+
+[node name="Jump2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 8 )
+volume_db = 1.0
+pitch_scale = 0.85
+
+[node name="Jump3" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 8 )
+volume_db = 1.0
+pitch_scale = 0.36
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 3072.88, 0 )
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 3450.84, 24.3989 )
+
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 3841.17, 79.1188 )
+
+[node name="Enemy4" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 4072.82, 59.4188 )
+
+[node name="Enemy5" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 4517.27, -13.2773 )
+
+[node name="Enemy6" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 4817.01, 79.1188 )
+
+[node name="Enemy7" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 5375.77, 91.2257 )
+
+[node name="Enemy8" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 5840.28, 59.4188 )
+
+[node name="Enemy9" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 6304.79, 41.7538 )
+
+[node name="Lead" type="Node" parent="."]
+
+[node name="Coin" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 2918.41, 24.3989 )
+
+[node name="Coin2" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3169.51, 26.9078 )
+
+[node name="Coin3" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3223.01, 26.9078 )
+
+[node name="Coin4" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3382.31, 13.8299 )
+
+[node name="Coin5" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3623.08, 28.4765 )
+
+[node name="Coin6" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3787.85, 70.4484 )
+
+[node name="Coin7" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 3987.88, 53.8606 )
+
+[node name="Coin8" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 4179.4, 13.8299 )
+
+[node name="Coin9" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 4339.91, -13.2773 )
+
+[node name="Coin10" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 4474.88, -26.5545 )
+
+[node name="Coin11" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 4739.97, 76.9233 )
+
+[node name="Coin12" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 4935.14, 120.873 )
+
+[node name="Coin13" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 5098.69, 79.1188 )
+
+[node name="Coin14" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 5326.69, 83.5075 )
+
+[node name="Coin15" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 5618.53, 13.8006 )
+
+[node name="Coin16" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 5777.83, 49.9705 )
+
+[node name="Coin17" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 6017.38, 93.5111 )
+
+[node name="Coin18" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 6148.71, 61.0001 )
+
+[node name="Coin19" parent="Lead" instance=ExtResource( 6 )]
+position = Vector2( 6360.9, 26.9078 )
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -15.0
+pitch_scale = 1.7
+autoplay = true

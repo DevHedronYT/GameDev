@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/explode.wav-e28299e3b9b909ad36b45e5dfc49f404.sample"
+
+[deps]
+
+source_file="res://Music/explode.wav"
+dest_files=[ "res://.import/explode.wav-e28299e3b9b909ad36b45e5dfc49f404.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

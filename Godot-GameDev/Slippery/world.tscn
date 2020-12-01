@@ -1,0 +1,157 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://OutofBounds.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LevelTele.tscn" type="PackedScene" id=3]
+[ext_resource path="res://tile2.tres" type="TileSet" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://m5x7.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Coins.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Ludum Dare 38 - Track 3.wav" type="AudioStream" id=8]
+[ext_resource path="res://Jump.wav" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 6 )
+
+[node name="World" type="Node2D"]
+position = Vector2( 1.98065, -1.98065 )
+
+[node name="Tutorial" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Tutorial"]
+margin_left = -157.88
+margin_top = 205.685
+margin_right = 62.1204
+margin_bottom = 242.685
+custom_fonts/font = SubResource( 1 )
+text = "Use AD or Arrow Keys to move....
+You will be pulled in a direction"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Tutorial"]
+margin_left = 202.381
+margin_top = 187.96
+margin_right = 359.381
+margin_bottom = 224.96
+custom_fonts/font = SubResource( 1 )
+text = "Space to jump...
+Your jumps are random"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Tutorial"]
+margin_left = 399.795
+margin_top = 144.229
+margin_right = 513.795
+margin_bottom = 201.229
+custom_fonts/font = SubResource( 1 )
+text = "Avoid the Fire..
+R to reload level
+Escape to quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Tutorial"]
+margin_left = 68.101
+margin_top = 144.229
+margin_right = 204.101
+margin_bottom = 188.229
+custom_fonts/font = SubResource( 1 )
+text = "The Yellow 
+Circles will Guide You.."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Levelfin" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2312.93, 223.19 )
+next_world = "res://world2.tscn"
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( -274.894, 328.731 )
+scale = Vector2( 0.1, 0.1 )
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -3342070, -1073741824, 0, -3342064, -1073741824, 0, -3342058, -1073741824, 0, -3342052, -1073741824, 0, -3342046, -1073741824, 0, -3342040, -1073741824, 0, -3342034, -1073741824, 0, -3342028, -1073741824, 0, -3342022, -1073741824, 0, -2751787, -1073741824, 0, -2751781, -1073741824, 0, -2751775, -1073741824, 0, -2751769, -1073741824, 0, -2751763, -1073741824, 0, -2751757, -1073741824, 0, -2751751, -1073741824, 0, -2555523, -1073741824, 0, -2555517, -1073741824, 0, -2555511, -1073741824, 0, -2555505, -1073741824, 0, -2555499, -1073741824, 0, -2555493, -1073741824, 0, -2555487, -1073741824, 0, -2555481, -1073741824, 0, -2555475, -1073741824, 0, -2555469, -1073741824, 0, -2489784, -1073741824, 0, -2489778, -1073741824, 0, -2489772, -1073741824, 0, -2489766, -1073741824, 0, -2489760, -1073741824, 0, -2489754, -1073741824, 0, -2489748, -1073741824, 0, -2489742, -1073741824, 0, -2489736, -1073741824, 0, -1965772, -1073741824, 0, -1965766, -1073741824, 0, -1965760, -1073741824, 0, -1965754, -1073741824, 0, -1965748, -1073741824, 0, -1965742, -1073741824, 0, -1965736, -1073741824, 0, -1965730, -1073741824, 0, -1965724, -1073741824, 0, -1965718, -1073741824, 0, -1637876, -1073741824, 0, -1637870, -1073741824, 0, -1637864, -1073741824, 0, -1637858, -1073741824, 0, -1637852, -1073741824, 0, -1637846, -1073741824, 0, -1637840, -1073741824, 0, -1637834, -1073741824, 0, -1637746, -1073741824, 0, -1637740, -1073741824, 0, -1637734, -1073741824, 0, -1637728, -1073741824, 0, -1637722, -1073741824, 0, -1637716, -1073741824, 0, -1637710, -1073741824, 0, -1637704, -1073741824, 0, -1637698, -1073741824, 0, -1637692, -1073741824, 0, -1637686, -1073741824, 0, -1572681, -1073741824, 0, -1572675, -1073741824, 0, -1572669, -1073741824, 0, -1572663, -1073741824, 0, -1572657, -1073741824, 0, -1572651, -1073741824, 0, -1572645, -1073741824, 0, -1572639, -1073741824, 0, -1572633, -1073741824, 0, -1572627, -1073741824, 0, -1572621, -1073741824, 0, -1048576, -1073741824, 0, -1048570, -1073741824, 0, -1048564, -1073741824, 0, -1048558, -1073741824, 0, -1048552, -1073741824, 0, -1048546, -1073741824, 0, -1048540, -1073741824, 0, -1048534, -1073741824, 0, -1048528, -1073741824, 0, -1048522, -1073741824, 0, -1048516, -1073741824, 0, -1048510, -1073741824, 0, -1048504, -1073741824, 0, -1048498, -1073741824, 0, -1048492, -1073741824, 0, -1048486, -1073741824, 0, -1048480, -1073741824, 0, -1048474, -1073741824, 0, -1048468, -1073741824, 0, -1048462, -1073741824, 0, -1048456, -1073741824, 0, -1048450, -1073741824, 0, -1048444, -1073741824, 0, -1048438, -1073741824, 0, -1048432, -1073741824, 0, -1048426, -1073741824, 0, -1048420, -1073741824, 0, -1048414, -1073741824, 0, -654908, -1073741824, 0, -654902, -1073741824, 0, -654896, -1073741824, 0, -654890, -1073741824, 0, -654884, -1073741824, 0, -654878, -1073741824, 0, -654872, -1073741824, 0, -654866, -1073741824, 0, -654860, -1073741824, 0, -654854, -1073741824, 0 )
+
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 145.809, 225.692 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 600.608, 113.842 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 640.597, 114.511 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 675.761, 114.511 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 987.945, 157.014 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 1224.06, 244.272 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 1413.72, 211.986 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 1840.25, 211.986 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 1871.69, 211.986 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 7 )]
+position = Vector2( 1903.5, 211.957 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( -210.626, 223.19 )
+
+[node name="Jump" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 9 )
+volume_db = 1.0
+
+[node name="Jump2" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 9 )
+volume_db = 1.0
+pitch_scale = 0.85
+
+[node name="Jump3" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 9 )
+volume_db = 1.0
+pitch_scale = 0.36
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy1" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 496.214, 218.962 )
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1084.96, 170.291 )
+
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 5 )]
+position = Vector2( 1674.95, 170.291 )
+
+[node name="OutofBounds" type="Node" parent="."]
+
+[node name="out" parent="OutofBounds" instance=ExtResource( 1 )]
+position = Vector2( 1125.89, 641.333 )
+
+[node name="out2" parent="OutofBounds" instance=ExtResource( 1 )]
+position = Vector2( 2846.23, 642.019 )
+
+[node name="out3" parent="OutofBounds" instance=ExtResource( 1 )]
+position = Vector2( -1143.5, 642.519 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -24.592
+autoplay = true

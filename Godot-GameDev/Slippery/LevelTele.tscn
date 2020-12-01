@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Levelfin.gd" type="Script" id=1]
+[ext_resource path="res://low4 (1).png" type="Texture" id=2]
+[ext_resource path="res://low4.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 63.7915
+
+[node name="Levelfin" type="Area2D"]
+position = Vector2( 3100.6, 242.014 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -26.2896, -77.4072 )
+scale = Vector2( 0.512459, 0.53257 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -26.0645, -70.422 )
+shape = SubResource( 2 )

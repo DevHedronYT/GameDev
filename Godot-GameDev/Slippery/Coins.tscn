@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://LiquidIdle.png" type="Texture" id=1]
+[ext_resource path="res://sfnss (4).png" type="Texture" id=2]
+[ext_resource path="res://Coins.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.086
+
+[node name="Coin" type="Area2D"]
+position = Vector2( -1, 0 )
+script = ExtResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 0.705882, 0.705882, 1 )
+self_modulate = Color( 0.980392, 0.988235, 0, 1 )
+show_behind_parent = true
+position = Vector2( 43.5816, 34.3996 )
+scale = Vector2( 0.0885635, 0.184315 )
+frames = SubResource( 1 )
+frame = 2
+speed_scale = 0.5
+playing = true
+offset = Vector2( -352.095, -61.7936 )
+
+[node name="Coin" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 11.1619, 23.0627 )
+shape = SubResource( 2 )

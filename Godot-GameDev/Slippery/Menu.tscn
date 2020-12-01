@@ -1,0 +1,101 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://download (5).png" type="Texture" id=1]
+[ext_resource path="res://download (4).png" type="Texture" id=2]
+[ext_resource path="res://m5x7.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Menu.gd" type="Script" id=4]
+[ext_resource path="res://Click.wav" type="AudioStream" id=5]
+[ext_resource path="res://Ludum Dare 38 - Track 9.wav" type="AudioStream" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 85
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 85
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 6.10352e-05
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="AnimatedSprite" parent="."]
+position = Vector2( 533.972, 352.871 )
+scale = Vector2( 0.874591, 1.01384 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="Main" type="CenterContainer" parent="."]
+margin_left = -30.1392
+margin_top = -27.319
+margin_right = 1097.86
+margin_bottom = 732.681
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main"]
+margin_left = 402.0
+margin_top = 262.0
+margin_right = 725.0
+margin_bottom = 498.0
+
+[node name="Label" type="Label" parent="Main/VBoxContainer"]
+margin_right = 323.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 2 )
+text = "SLIPPERY"
+
+[node name="Button" type="Button" parent="Main/VBoxContainer"]
+margin_top = 84.0
+margin_right = 323.0
+margin_bottom = 158.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Start Game"
+flat = true
+
+[node name="Click" type="AudioStreamPlayer" parent="Main/VBoxContainer/Button"]
+stream = ExtResource( 5 )
+volume_db = 1.0
+pitch_scale = 0.5
+
+[node name="Button2" type="Button" parent="Main/VBoxContainer"]
+margin_top = 162.0
+margin_right = 323.0
+margin_bottom = 236.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Quit Game"
+flat = true
+
+[node name="Click" type="AudioStreamPlayer" parent="Main/VBoxContainer/Button2"]
+stream = ExtResource( 5 )
+volume_db = 1.0
+pitch_scale = 0.5
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = 1.0
+autoplay = true
+[connection signal="pressed" from="Main/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Main/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
