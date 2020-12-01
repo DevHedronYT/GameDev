@@ -3,5 +3,7 @@ My Open Source Public Game Development Projects. Any 3rd Party Assets used will 
 
 Most of these projects can be found at: https://devhedronyt.itch.io
 
-Updated: 01/12/2020
-Current size of the Whole Repository: 119.1 MB
+To get the repository you can either clone it or download the .zip file uploaded to Google Drive here which seems to be quite smaller than ~120 MB and is ~55 MB:  https://drive.google.com/drive/u/0/folders/15OhRg2EUaB7aZzzfHJLoRi3XY00ZG8ok
+
+I will try to make an itch.io for downloading this repository to your computer since the original one is really big (120 MB) so I will insert a link for it too in some time
+
