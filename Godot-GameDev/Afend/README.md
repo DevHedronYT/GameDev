@@ -1,7 +1,6 @@
 # Afend
 
-This game was made for the United-Game-Jam 2020, I am going to be continuing to make more open source games like these.
-The .zip file contains everything except the exports. It was made with godot with my friends
+This game was made for the United-Game-Jam 2020. It was made with godot with my friends
 
 I followed a lot of tutorials as this was just my 4th game I have ever made.
 The tutorials I followed are here:
