@@ -1,6 +1,8 @@
 import pygame, sys, math
 from pygame.locals import * 
 
+# Using Python 3.9.1 and pygame==2.0.0
+
 pygame.init()
 pygame.font.init()
 
