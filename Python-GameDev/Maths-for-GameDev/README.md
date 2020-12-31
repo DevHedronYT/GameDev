@@ -1,5 +1,5 @@
 ## About the Program:
-A small simple program made for explaining Maths using Pygame and Python.
+A Small Simple Program Made for Explaining Maths using Pygame and Python.
 
 ## Downloading the Program:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
