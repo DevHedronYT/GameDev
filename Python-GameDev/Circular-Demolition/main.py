@@ -3,7 +3,6 @@ from pygame.locals import *
 
 # Using Python 3.9 and pygame==2.0.0
 
-
 pygame.init()
 pygame.mixer.init()
 
