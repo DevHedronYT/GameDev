@@ -2,6 +2,7 @@ import pygame, sys, random, math
 from pygame.locals import *
 
 # Using Python 3.9 and pygame==2.0.0
+
 #pygame.mixer.pre_init(frequency=22050)
 pygame.init()
 
