@@ -1,1 +1,2 @@
-This folder contains all of my Python Projects. If instructions are unclear just open up a new issue and the ececutables for them can be found on my itch.io
+This folder contains all of my Python Projects. If instructions are unclear just open up a new issue and the ececutables for them can be found on my itch.io. 
+Please also note: If I have not updated the .zip file for this GitHub whose link can be found in the README.md here: https://github.com/DevHedronYT/GameDev, please just consider cloning the repository as ```git clone https://github.com/DevHedronYT/GameDev.git```
