@@ -2,6 +2,7 @@ import pygame, sys, random
 from pygame.locals import *
 
 # Using Python 3.8.5 and pygame==2.0.0.dev12
+
 def update_score(score, high_score):
     if score > high_score:
         high_score = score
