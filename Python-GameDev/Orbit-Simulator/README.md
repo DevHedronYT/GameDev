@@ -12,7 +12,7 @@ pip3 install -r requirements.txt or pip install -r requirements.txt
 
 Also I am using Python 3.9.1 so be sure to have it installed
 
-## Running Game:
+## Running the Game:
 
 ```
 python3 main.py or python main.py
