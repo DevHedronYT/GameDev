@@ -4,7 +4,7 @@ Ok, so you click anywhere in the window and circles will start appearing and wil
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
 
-## Getting Requirements:
+## Getting the Requirements:
 
 ```
 pip3 install -r requirements.txt or pip install -r requirements.txt
