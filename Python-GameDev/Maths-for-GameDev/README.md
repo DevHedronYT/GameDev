@@ -22,6 +22,6 @@ python3 main.py or python main.py
 
 Use your arrow keys to go through the slides and at slide 3 and 4 you can draw lines by clicking in places and then pressing "D" and you can also create some simple rectangles and maybe make text with them.
 
-## 3rd Party Assets Used in the Game:
+## 3rd Party Assets Used in the Program:
 
 None Used Except for Text Which Can be Found Here: https://managore.itch.io/m6x11
