@@ -1,7 +1,7 @@
 import pygame,sys,time,math,random
 from pygame.locals import *
 
-#Using python 3.9 and pygame==2.0.0
+# Using Python 3.9 and pygame==2.0.0
 
 
 pygame.init()
