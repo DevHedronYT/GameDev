@@ -1,7 +1,7 @@
-## About the Game:
+## About the Program:
 Ok, so you click anywhere in the window and circles will start appearing and will orbit the bigger one. A small simple program made for explaining Maths using Pygame and Python.
 
-## Downloading the Game:
+## Downloading the Program:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
 
 ## Getting the Requirements:
