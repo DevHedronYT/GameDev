@@ -1,11 +1,8 @@
-import pygame
-import random
-import sys
-import math
-import time
+import pygame, random, sys, math, time
 from pygame.locals import *
 
-# Using python 3.8.5 and pygame==2.0.0.dev12
+# Using Python 3.8.5 and pygame==2.0.0.dev12
+
 radius = random.randint(1, 100)
 time_count = 0
 materials = {}
