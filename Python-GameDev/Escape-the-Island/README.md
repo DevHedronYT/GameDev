@@ -4,7 +4,7 @@ Ok, so you are on stuck on an island, your job, escape the island, but with comm
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
 
-## Getting Requirements:
+## Getting the Requirements:
 
 ```
 pip3 install -r requirements.txt or pip install -r requirements.txt
@@ -12,7 +12,7 @@ pip3 install -r requirements.txt or pip install -r requirements.txt
 
 Also I am using Python 3.8.5 so be sure to have it or a version greater than Python 3.8 installed
 
-## Running Game:
+## Running the Game:
 
 ```
 python3 main.py or python main.py
