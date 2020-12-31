@@ -1,6 +1,8 @@
 import pygame, sys, random, time, math
 from pygame.locals import *
 
+# Using Python 3.8.6 and pygame==2.0.0.dev16
+
 def sprites(image_path, num_of_images):
     image_list = [pygame.image.load(image_path + str(i) + '.png').convert_alpha() for i in range(num_of_images)]
     return image_list
@@ -76,8 +78,6 @@ def move_func(rect, movement, tiles):
 def draw_bg(bg, bg_x, bg_y, screen_width):
     screen.blit(bg, (bg_x, bg_y))
     screen.blit(bg, (bg_x + screen_width, bg_y))
-
-#Using python 3.8.6 and pygame==2.0.0.dev16
 
 # 640 / 20
 
