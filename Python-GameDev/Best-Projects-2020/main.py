@@ -74,7 +74,7 @@ while True:
 
     pygame.draw.circle(screen, (255, 255, 255), pygame.mouse.get_pos(), 4)
         
-    text("Happy New Year! Today I am going to showing off some of my best projects that I made in the past year...", (r, g, b), 20, 23, 50, font)
+    text("Happy New Year! Today I am going to be showing off some of my best projects that I made in the past year...", (r, g, b), 20, 23, 50, font)
     text("It was quite a tough year but I made some interesting projects along the way", (r, g, b), 20, 23, 80, font)
     text("For some I followed a lot of tutorials, while others I made just for fun or experience", (r, g, b), 20, 23, 110, font)
 
