@@ -2,8 +2,8 @@ import pygame, math, sys
 from queue import PriorityQueue
 from pygame.locals import *
 
-#Using python 3.9 and pygame==2.0.0
-#Followed Tech With Tim's Tutorial but Made Some Changes
+# Using Python 3.9 and pygame==2.0.0
+# Followed Tech With Tim's Tutorial but Made Some Changes
 
 size = 600
 screen = pygame.display.set_mode((size, size), DOUBLEBUF)
