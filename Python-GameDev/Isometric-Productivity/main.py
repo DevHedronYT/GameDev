@@ -24,12 +24,12 @@ a = 1
 a2 = 26.6
 
 matrix = [
-    [a, round(-math.tan(math.radians(a2)), 3)],
-    [a, round(math.tan(math.radians(a2)), 3)]
+    [a, round(math.tan(math.radians(a2)), 3)],
+    [a, round(-math.tan(math.radians(a2)), 3)]
 ]
 
 def transform_cords(cords):
-    cords = [cords[1] * 32, cords[0] * 32]
+    cords = [cords[0] * 32, cords[1] * 32]
     return [(cords[0] * matrix[0][0]) + (cords[1] * matrix[1][0]),
             (cords[0] * matrix[0][1]) + (cords[1] * matrix[1][1])]
 
