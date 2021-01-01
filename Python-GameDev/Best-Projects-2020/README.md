@@ -15,7 +15,7 @@ Links to GitHub of Each Project Except Number 4:
 ```
 
 ## About the Program:
-A Small Simple Program Made for Showing Contents of a Video, using Pygame and Python. Here is the video as well: https://youtu.be/DmwMXqe8hkc
+A Small Simple Program Made for Showing Contents of a Video, using Pygame and Python. Here is the YouTube Video as well: https://youtu.be/DmwMXqe8hkc
 
 ## Downloading the Program:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
