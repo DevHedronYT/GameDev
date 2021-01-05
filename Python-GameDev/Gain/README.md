@@ -1,5 +1,5 @@
 ## About the Game:
-This game was made for Dani's Basement Jam. Itch.io Link: https://devhedronyt.itch.io/gain. It was made using Pygame 2.0.1 and Python 3.9.1
+This game was made for Dani's Basement Jam. Itch.io Link: https://devhedronyt.itch.io/gain. It was made using Pygame 2.0.1 and Python 3.9.1. Also my first game of 2021 :)
 
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
