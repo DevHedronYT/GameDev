@@ -7,6 +7,9 @@ To get the repository you can either clone it or download the .zip file uploaded
 
 I will try to make an itch.io for downloading this repository to your computer since the original one is really big (120 MB) so I will insert a link for it too in some time
 
+Edit:
+	itch.io Link: https://devhedronyt.itch.io/game-dev-source-files 
+
 Also, when I refer to or say, "Download the .zip file", I am talking about the .zip file of the repository which you can download or you can git clone it. 
 
 *Note: The Creative Commons Zero v1.0 Universal License only applies to the assets I have used, meaning the art, the fonts or the music. It does not apply to the code, the license for the code is MIT* 
