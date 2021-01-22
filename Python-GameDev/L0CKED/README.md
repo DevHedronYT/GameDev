@@ -1,5 +1,5 @@
 ## About the Game:
-This game was made for Pygame Community & My First Game Jam 2021 Game Jams. Itch.io Link: https://devhedronyt.itch.io/l0cked. Here is a link to my devlog: https://youtu.be/0HB5qW1fd5Y. It was made using Pygame 2.0.1 and Python 3.9.1. Also my second game of 2021 :)
+This game was made for 2 Game Jams but I ended up removing it from the second game jam since they did not allow submissions for 2 game jams. Itch.io Link: https://devhedronyt.itch.io/l0cked. Here is a link to my devlog: https://youtu.be/0HB5qW1fd5Y. It was made using Pygame 2.0.1 and Python 3.9.1. Also my second game of 2021 :)
 
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game
