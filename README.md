@@ -3,12 +3,8 @@ My Open Source Public Game Development Projects. Any 3rd Party Assets used will 
 
 Most of these projects can be found at: https://devhedronyt.itch.io
 
-To get the repository you can either clone it or download the .zip file uploaded to Google Drive here which seems to be quite smaller than ~120 MB and is ~55 MB:  https://drive.google.com/drive/u/0/folders/15OhRg2EUaB7aZzzfHJLoRi3XY00ZG8ok
-
-I will try to make an itch.io for downloading this repository to your computer since the original one is really big (120 MB) so I will insert a link for it too in some time
-
-Edit:
-	itch.io Link: https://devhedronyt.itch.io/game-dev-source-files 
+To get the repository you can either clone it or download the .zip file uploaded to itch.io here which is ~53 MB: 
+https://devhedronyt.itch.io/game-dev-source-files 
 
 Also, when I refer to or say, "Download the .zip file", I am talking about the .zip file of the repository which you can download or you can git clone it. 
 
