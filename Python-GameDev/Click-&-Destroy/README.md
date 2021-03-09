@@ -1,5 +1,5 @@
 ## About the Game:
-This game was made for Brackeys Game Jam 2021.1. It was made in about 3-4 days. Itch.io Link: https://devhedronyt.itch.io/clickdestroy. Here is a link to my devlog: (Coming Soon). It was made using Pygame 2.0.1 and Python 3.9.1. :)
+This game was made for Brackeys Game Jam 2021.1. It was made in about 3-4 days. Itch.io Link: https://devhedronyt.itch.io/clickdestroy. Here is a link to my devlog: (Coming Soon). It was made using Pygame 2.0.1 and Python 3.9.1. There might be some grammatical errors as well.... :)
 
 ## Downloading the Game:
 Download the .zip file. unzip it and extract all the items and then get the requirements and run the game. 
