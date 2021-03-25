@@ -383,7 +383,7 @@ while True:
             game_map = load_map("map_" + str(map_num))
 
             player_reset = True
-            enemies.clear()
+            del enemies[:]
 
             y = 0
             for row in game_map:
@@ -495,8 +495,8 @@ while True:
         text("FPS: " + str(int(fps.get_fps())), (255, 255, 255), 20, 40, 30, font, display)
         text("Coins: " + str(int(coin_count)) + "/" + str(required_coins), (255, 255, 255), 20, 390, 80, font, display)
 
-        time += 1
-        text("Time: " + str(round(time / 120, 3)), (255, 255, 255), 20, 390, 100, font, display)
+        time += 1/fps.get_fps()
+        text("Time: " + str(round(time, 3)), (255, 255, 255), 20, 390, 100, font, display)
 
         if stamina > -1:
             display.blit(pygame.transform.scale(stamina_images[stamina], (3 * 15, 15)), (430, 50))
